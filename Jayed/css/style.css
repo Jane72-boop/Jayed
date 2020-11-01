@@ -1,0 +1,926 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  background: url(../imgs/testbg.jpg) fixed center;
+  background-attachment: fixed;
+}
+
+iframe {
+  border: none;
+}
+
+.home a,
+.creation a,
+.about a,
+.contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.mains {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  z-index: 6;
+  overflow-x: hidden;
+}
+
+.titleTxt {
+  display: flex;
+  width: 800px;
+  align-items: flex-start;
+  z-index: 4;
+  height: 10vh;
+  position: absolute;
+  top: 28%;
+  padding: 0 0 0 0;
+  align-items: center;
+  transition: all 0.4s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+}
+
+.buttonss {
+  display: flex;
+  transition: all 0.4s ease;
+  top: 2%;
+}
+
+.disableBtn {
+  pointer-events: none;
+}
+
+.moveCreaBtn {
+  transform: translateY(250px);
+}
+
+.moveCreaTitle {
+  transform: translateY(-150px);
+}
+
+.moveCreaPhoto {
+  transform: translateY(9050px);
+}
+
+.moveCreaVideo {
+  transform: translateY(4600px);
+}
+
+.moveAbtBtn {
+  transform: translateY(220px);
+}
+
+.moveAbtTitle {
+  transform: translateY(-100px);
+}
+
+.moveContBtn {
+  transform: translateY(175px);
+}
+
+.moveContTitle {
+  transform: translateY(-80px);
+}
+
+.otherTxt {
+  display: inline-flex;
+  position: relative;
+  width: 180px;
+  overflow: hidden;
+}
+
+.homeTxt {
+  font-family: Futurist Fixed-width, sans-serif;
+  position: relative;
+  left: 5px;
+  font-weight: 100;
+  color: white;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  z-index: 1;
+  animation-name: tesAnim;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+}
+
+@keyframes tesAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes tesAnimEnd {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.headerTxt {
+  display: flex;
+  border-right: #9e0606 1px solid;
+  font-family: Futurist Fixed-width, sans-serif;
+  font-size: 34px;
+  font-weight: 100;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button {
+  border: solid 2px white;
+  margin: 30px;
+  width: 150px;
+  height: 60px;
+  font-family: Futura PT;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+  background: none;
+  padding: 10px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+button:hover {
+  border-color: #9e0606;
+  box-shadow: 0 0 20px #c41111;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+.bgImg {
+  display: none;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: -4;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgImg {
+  overflow: hidden;
+}
+
+.createCont {
+  display: none;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  position: absolute;
+  padding: 0 0 0 0;
+  transition: all 0.4s ease;
+  top: 23%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photosShowCase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.leftPhotoCont {
+  display: none;
+  opacity: 1;
+  flex-wrap: wrap;
+  margin: 20px 0 20px 20px;
+  width: 600px;
+  height: auto;
+  align-self: flex-start;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.45s;
+}
+
+.rightPhotoCont {
+  display: none;
+  opacity: 1;
+  flex-wrap: wrap;
+  position: absolute;
+  margin: 20px 0 20px 20px;
+  width: 600px;
+  height: auto;
+  justify-self: flex-end;
+  align-self: flex-end;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.45s;
+}
+
+.middlePhotoCont {
+  display: flex;
+  opacity: 1;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.45s;
+}
+
+@keyframes leftPhotoContIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes rightPhotoContIn {
+  0% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes midPhotoContIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes leftPhotoContOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+@keyframes rightPhotoContOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+}
+
+@keyframes midPhotoContOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.imageFirstCont,
+.imageSecondCont,
+.imageAltFirstCont,
+.imageAltSecondCont {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  padding-bottom: 30px;
+}
+
+.imageSeventh {
+  width: 1000px;
+  height: auto;
+}
+
+.imageEight {
+  width: 700px;
+  height: auto;
+}
+
+.imageSecondCont,
+.imageAltSecondCont {
+  padding-top: 30px;
+}
+
+.imageFirst,
+.imageAltFirst {
+  width: 500px;
+  height: auto;
+}
+
+.imagesFirst {
+  display: flex;
+
+  width: 500px;
+  height: auto;
+}
+
+.imageFirstDesc,
+.imageAltFirstDesc {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: Futura Pt;
+  font-size: 25px;
+  color: white;
+}
+
+.videosShowcase {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.videoAllCont {
+  display: none;
+  opacity: 0;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.45s;
+}
+
+@keyframes showVids {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideVids {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.aVideoContIframe {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  padding-bottom: 50px;
+  border: 0;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.aVideoCont {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  padding-bottom: 50px;
+}
+
+.videoDesc {
+  display: flex;
+  flex-basis: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  font-family: Futura Pt;
+  font-size: 25px;
+  color: white;
+}
+
+.photoCont,
+.videoCont {
+  display: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 350px;
+  height: 350px;
+  z-index: 6;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+}
+
+.overlayPh,
+.overlayVd {
+  display: none;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  width: 350px;
+  height: 350px;
+  animation: hideOverlay;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.35s;
+  animation-delay: 0.1s;
+}
+
+@keyframes showOverlay {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hideOverlay {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.photoContTxt,
+.videoContTxt {
+  font-family: Futura Free;
+  font-size: 50px;
+  letter-spacing: 10px;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  filter: drop-shadow(0 0 10px #ffffff);
+}
+
+.photoCont img,
+.videoCont img {
+  width: 100%;
+  height: auto;
+}
+
+.borderImg,
+.borderVd {
+  display: flex;
+  position: absolute;
+  z-index: 5;
+  width: 350px;
+  height: 350px;
+  border: 2px solid #920000;
+}
+
+@keyframes moveCreaContIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveCreaContOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(20%);
+  }
+}
+
+.aboutCont {
+  display: none;
+  width: 800px;
+  align-items: flex-start;
+  z-index: 0;
+  position: absolute;
+  top: 28%;
+  padding: 0 0 0 0;
+  transition: all 0.4s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+  height: 300px;
+}
+
+.aboutImg {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  position: absolute;
+  padding: 0 0 0 0;
+  align-items: center;
+  transition: all 0.4s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0%;
+}
+
+.aboutImg img {
+  width: 275px;
+  height: auto;
+}
+
+.aboutTxt {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  align-items: flex-start;
+  z-index: 0;
+  position: relative;
+  top: 15%;
+  padding: 0 0 0 0;
+  align-items: left;
+  text-align: left;
+  transition: all 0.4s ease;
+  margin-left: 60%;
+  margin-bottom: 0%;
+  font-family: Futura PT;
+}
+
+.aboutActualTxt {
+  color: rgb(255, 246, 228);
+  display: none;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+  pointer-events: none;
+}
+
+.aboutActualImg {
+  width: 250px;
+  height: auto;
+  display: none;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+  pointer-events: none;
+}
+
+@keyframes moveAboutImg {
+  0% {
+    opacity: 0;
+    transform: translateX(-30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveOutAboutImg {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+
+.contactCont {
+  display: none;
+  width: 800px;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  top: 30%;
+  position: absolute;
+  padding: 0 0 0 0;
+  transition: all 0.4s ease;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  height: 250px;
+  pointer-events: none;
+}
+
+.contactTxt {
+  color: rgb(255, 243, 220);
+  width: 100%;
+  display: none;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  top: 30%;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+  pointer-events: auto;
+}
+
+.contactTxt p {
+  font-family: Futura PT;
+  font-style: normal;
+  font-size: 17px;
+}
+
+.contactSites {
+  width: 50%;
+  height: 50px;
+  display: none;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  top: 20%;
+  opacity: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.55s;
+  animation-delay: 0.1s;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.gmailCont,
+.instaCont,
+.ytCont {
+  margin: 50px;
+  transition: all 0.4s ease;
+}
+
+.gmail,
+.instagram,
+.youtube {
+  width: 35px;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.gmail:hover,
+.instagram:hover,
+.youtube:hover {
+  cursor: pointer;
+  fill: #9e0606;
+  filter: drop-shadow(0 0 10px #ff1313);
+}
+
+.moveGmail {
+  transform: translateX(-120px);
+}
+
+.gmailInfo {
+  display: none;
+  opacity: 0;
+  font-family: Futura Pt;
+  font-size: 18px;
+  color: white;
+  position: absolute;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 50px;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.4s;
+  animation-delay: 0.05s;
+}
+
+@keyframes gmailTxt {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveContIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveContOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+}
+
+/*add media query for 960px */
+
+@media only screen and (max-width: 790px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .bgImg {
+    overflow: hidden;
+  }
+
+  .titleTxt {
+    margin-left: 340px;
+  }
+
+  .headerTxt {
+    font-family: Futurist Fixed-width, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    color: white;
+  }
+
+  .homeTxt {
+    font-size: 18px;
+  }
+  button {
+    margin: 20px;
+    width: 80px;
+    height: 40px;
+    font-family: Futura PT;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+    background: none;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .buttonss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .titleTxt {
+    display: flex;
+    width: 800px;
+    align-items: flex-start;
+    z-index: 4;
+    height: 10vh;
+    position: absolute;
+    top: 28%;
+    padding: 0 0 0 0;
+    margin-left: 560px;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .headerTxt {
+    font-family: Futurist Fixed-width, sans-serif;
+    font-size: 22px;
+    font-weight: 100;
+  }
+
+  .homeTxt {
+    font-family: Futurist Fixed-width, sans-serif;
+    font-size: 16px;
+  }
+
+  button {
+    margin: 20px;
+    width: 90px;
+    height: 50px;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+}
+
+@media only screen and (max-width: 260px) {
+  .titleTxt {
+    display: flex;
+    width: 800px;
+    align-items: flex-start;
+    z-index: 4;
+    height: 10vh;
+    position: absolute;
+    top: 20%;
+    padding: 0 0 0 0;
+    margin-left: 630px;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .headerTxt {
+    font-family: Futurist Fixed-width, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  .homeTxt {
+    font-family: Futurist Fixed-width, sans-serif;
+    font-size: 14px;
+  }
+}
