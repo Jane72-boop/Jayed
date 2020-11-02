@@ -3,20 +3,17 @@
   margin: 0;
   padding: 0;
 }
-
 html,
 body {
   margin: 0;
   height: 100%;
   width: 100%;
 }
-
 body {
   background-color: black;
   background: url(../imgs/testbg.jpg) fixed center;
   background-attachment: fixed;
 }
-
 iframe {
   border: none;
 }
@@ -28,7 +25,6 @@ iframe {
   text-decoration: none;
   color: white;
 }
-
 .mains {
   display: flex;
   width: 100%;
@@ -39,72 +35,57 @@ iframe {
   z-index: 6;
   overflow-x: hidden;
 }
-
 .titleTxt {
   display: flex;
   width: 800px;
-  align-items: flex-start;
   z-index: 4;
   height: 10vh;
   position: absolute;
   top: 28%;
-  padding: 0 0 0 0;
   align-items: center;
   transition: all 0.4s ease;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0%;
 }
-
 .buttonss {
   display: flex;
   transition: all 0.4s ease;
   top: 2%;
 }
-
 .disableBtn {
   pointer-events: none;
 }
-
 .moveCreaBtn {
   transform: translateY(250px);
 }
-
 .moveCreaTitle {
   transform: translateY(-150px);
 }
-
 .moveCreaPhoto {
   transform: translateY(9050px);
 }
-
 .moveCreaVideo {
   transform: translateY(4600px);
 }
-
 .moveAbtBtn {
   transform: translateY(220px);
 }
-
 .moveAbtTitle {
   transform: translateY(-100px);
 }
-
 .moveContBtn {
   transform: translateY(175px);
 }
-
 .moveContTitle {
   transform: translateY(-80px);
 }
-
 .otherTxt {
   display: inline-flex;
   position: relative;
   width: 180px;
   overflow: hidden;
 }
-
 .homeTxt {
   font-family: Futurist Fixed-width, sans-serif;
   position: relative;
@@ -120,31 +101,26 @@ iframe {
   animation-duration: 0.55s;
   animation-delay: 0.1s;
 }
-
 @keyframes tesAnim {
   0% {
     opacity: 0;
     transform: translateX(-100%);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
 @keyframes tesAnimEnd {
   0% {
     opacity: 1;
     transform: translateX(0%);
   }
-
   100% {
     opacity: 0;
     transform: translateX(100%);
   }
 }
-
 .headerTxt {
   display: flex;
   border-right: #9e0606 1px solid;
@@ -154,7 +130,6 @@ iframe {
   color: white;
   transition: all 0.3s ease;
 }
-
 button {
   border: solid 2px white;
   margin: 30px;
@@ -171,17 +146,14 @@ button {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
-
 button:hover {
   border-color: #9e0606;
   box-shadow: 0 0 20px #c41111;
   cursor: pointer;
 }
-
 button:focus {
   outline: none;
 }
-
 .bgImg {
   display: none;
   min-width: 100%;
@@ -193,11 +165,9 @@ button:focus {
   background-size: cover;
   background-attachment: fixed;
 }
-
 .bgImg {
   overflow: hidden;
 }
-
 .createCont {
   display: none;
   width: 800px;
@@ -205,13 +175,11 @@ button:focus {
   align-items: center;
   z-index: 0;
   position: absolute;
-  padding: 0 0 0 0;
   transition: all 0.4s ease;
   top: 23%;
   margin-left: auto;
   margin-right: auto;
 }
-
 .photosShowCase {
   display: flex;
   flex-direction: column;
@@ -219,7 +187,6 @@ button:focus {
   height: auto;
   transition: all 0.3s ease;
 }
-
 .leftPhotoCont {
   display: none;
   opacity: 1;
@@ -232,22 +199,19 @@ button:focus {
   animation-timing-function: ease-in-out;
   animation-duration: 0.45s;
 }
-
 .rightPhotoCont {
   display: none;
   opacity: 1;
   flex-wrap: wrap;
   position: absolute;
-  margin: 20px 0 20px 20px;
+  margin: 20px 20px 20px 0px;
   width: 600px;
   height: auto;
-  justify-self: flex-end;
   align-self: flex-end;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-duration: 0.45s;
 }
-
 .middlePhotoCont {
   display: flex;
   opacity: 1;
@@ -263,7 +227,6 @@ button:focus {
   animation-timing-function: ease-in-out;
   animation-duration: 0.45s;
 }
-
 @keyframes leftPhotoContIn {
   0% {
     opacity: 0;
@@ -274,7 +237,6 @@ button:focus {
     transform: translateX(0%);
   }
 }
-
 @keyframes rightPhotoContIn {
   0% {
     opacity: 0;
@@ -285,7 +247,6 @@ button:focus {
     transform: translateX(0%);
   }
 }
-
 @keyframes midPhotoContIn {
   0% {
     opacity: 0;
@@ -296,7 +257,6 @@ button:focus {
     transform: translateY(0%);
   }
 }
-
 @keyframes leftPhotoContOut {
   0% {
     opacity: 1;
@@ -307,7 +267,6 @@ button:focus {
     transform: translateX(20%);
   }
 }
-
 @keyframes rightPhotoContOut {
   0% {
     opacity: 1;
@@ -318,7 +277,6 @@ button:focus {
     transform: translateX(-20%);
   }
 }
-
 @keyframes midPhotoContOut {
   0% {
     opacity: 1;
@@ -327,7 +285,6 @@ button:focus {
     opacity: 0;
   }
 }
-
 .imageFirstCont,
 .imageSecondCont,
 .imageAltFirstCont,
@@ -342,35 +299,28 @@ button:focus {
   height: auto;
   padding-bottom: 30px;
 }
-
 .imageSeventh {
   width: 1000px;
   height: auto;
 }
-
 .imageEight {
   width: 700px;
   height: auto;
 }
-
 .imageSecondCont,
 .imageAltSecondCont {
   padding-top: 30px;
 }
-
 .imageFirst,
 .imageAltFirst {
   width: 500px;
   height: auto;
 }
-
 .imagesFirst {
   display: flex;
-
   width: 500px;
   height: auto;
 }
-
 .imageFirstDesc,
 .imageAltFirstDesc {
   display: flex;
@@ -381,7 +331,6 @@ button:focus {
   font-size: 25px;
   color: white;
 }
-
 .videosShowcase {
   display: flex;
   flex-direction: column;
@@ -389,7 +338,6 @@ button:focus {
   height: auto;
   transition: all 0.3s ease;
 }
-
 .videoAllCont {
   display: none;
   opacity: 0;
@@ -399,33 +347,27 @@ button:focus {
   margin-right: auto;
   width: 1000px;
   height: auto;
-  justify-self: center;
   align-self: center;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
   animation-duration: 0.45s;
 }
-
 @keyframes showVids {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes hideVids {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 .aVideoContIframe {
   display: flex;
   flex-wrap: wrap;
@@ -433,8 +375,6 @@ button:focus {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
-  height: auto;
   padding-bottom: 50px;
   border: 0;
   height: 100%;
@@ -442,7 +382,6 @@ button:focus {
   top: 0;
   width: 100%;
 }
-
 .aVideoCont {
   display: flex;
   flex-wrap: wrap;
@@ -454,7 +393,6 @@ button:focus {
   height: auto;
   padding-bottom: 50px;
 }
-
 .videoDesc {
   display: flex;
   flex-basis: 100%;
@@ -465,7 +403,6 @@ button:focus {
   font-size: 25px;
   color: white;
 }
-
 .photoCont,
 .videoCont {
   display: none;
@@ -479,13 +416,13 @@ button:focus {
   animation-duration: 0.55s;
   animation-delay: 0.1s;
 }
-
 .overlayPh,
 .overlayVd {
   display: none;
   position: absolute;
   top: 0;
   z-index: 2;
+  background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(6px);
   align-items: center;
@@ -499,27 +436,22 @@ button:focus {
   animation-duration: 0.35s;
   animation-delay: 0.1s;
 }
-
 @keyframes showOverlay {
   0% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
 }
-
 @keyframes hideOverlay {
   0% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 .photoContTxt,
 .videoContTxt {
   font-family: Futura Free;
@@ -533,13 +465,11 @@ button:focus {
   color: white;
   filter: drop-shadow(0 0 10px #ffffff);
 }
-
 .photoCont img,
 .videoCont img {
   width: 100%;
   height: auto;
 }
-
 .borderImg,
 .borderVd {
   display: flex;
@@ -549,46 +479,40 @@ button:focus {
   height: 350px;
   border: 2px solid #920000;
 }
-
 @keyframes moveCreaContIn {
   0% {
     opacity: 0;
     transform: translateX(-20%);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
 @keyframes moveCreaContOut {
   0% {
     opacity: 1;
     transform: translateX(0%);
   }
-
   100% {
     opacity: 0;
     transform: translateX(20%);
   }
 }
-
 .aboutCont {
   display: none;
   width: 800px;
   align-items: flex-start;
+  flex-wrap: wrap;
   z-index: 0;
   position: absolute;
   top: 28%;
-  padding: 0 0 0 0;
   transition: all 0.4s ease;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0%;
   height: 300px;
 }
-
 .aboutImg {
   display: flex;
   width: 300px;
@@ -597,19 +521,15 @@ button:focus {
   align-items: center;
   z-index: 0;
   position: absolute;
-  padding: 0 0 0 0;
-  align-items: center;
   transition: all 0.4s ease;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 0%;
 }
-
 .aboutImg img {
   width: 275px;
   height: auto;
 }
-
 .aboutTxt {
   display: flex;
   width: 250px;
@@ -618,15 +538,12 @@ button:focus {
   z-index: 0;
   position: relative;
   top: 15%;
-  padding: 0 0 0 0;
-  align-items: left;
   text-align: left;
   transition: all 0.4s ease;
   margin-left: 60%;
   margin-bottom: 0%;
   font-family: Futura PT;
 }
-
 .aboutActualTxt {
   color: rgb(255, 246, 228);
   display: none;
@@ -636,7 +553,6 @@ button:focus {
   animation-delay: 0.1s;
   pointer-events: none;
 }
-
 .aboutActualImg {
   width: 250px;
   height: auto;
@@ -648,40 +564,33 @@ button:focus {
   animation-delay: 0.1s;
   pointer-events: none;
 }
-
 @keyframes moveAboutImg {
   0% {
     opacity: 0;
     transform: translateX(-30%);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
 @keyframes moveOutAboutImg {
   0% {
     opacity: 1;
     transform: translateX(0%);
   }
-
   100% {
     opacity: 0;
     transform: translateX(50%);
   }
 }
-
 .contactCont {
   display: none;
   width: 800px;
   align-items: center;
   justify-content: center;
-  height: 10vh;
   top: 30%;
   position: absolute;
-  padding: 0 0 0 0;
   transition: all 0.4s ease;
   margin-left: auto;
   margin-right: auto;
@@ -689,7 +598,6 @@ button:focus {
   height: 250px;
   pointer-events: none;
 }
-
 .contactTxt {
   color: rgb(255, 243, 220);
   width: 100%;
@@ -705,13 +613,11 @@ button:focus {
   animation-delay: 0.1s;
   pointer-events: auto;
 }
-
 .contactTxt p {
   font-family: Futura PT;
   font-style: normal;
   font-size: 17px;
 }
-
 .contactSites {
   width: 50%;
   height: 50px;
@@ -730,14 +636,12 @@ button:focus {
   z-index: 1;
   pointer-events: auto;
 }
-
 .gmailCont,
 .instaCont,
 .ytCont {
   margin: 50px;
   transition: all 0.4s ease;
 }
-
 .gmail,
 .instagram,
 .youtube {
@@ -745,20 +649,16 @@ button:focus {
   height: auto;
   transition: all 0.3s ease;
 }
-
 .gmail:hover,
 .instagram:hover,
 .youtube:hover {
   cursor: pointer;
-  fill: #9e0606;
   filter: drop-shadow(0 0 10px #ff1313);
 }
-
 .moveGmail {
   transform: translateX(-120px);
 }
-
-.gmailInfo {
+.gmailInfos {
   display: none;
   opacity: 0;
   font-family: Futura Pt;
@@ -773,44 +673,160 @@ button:focus {
   animation-duration: 0.4s;
   animation-delay: 0.05s;
 }
-
 @keyframes gmailTxt {
   0% {
     opacity: 0;
     transform: translateX(-40px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
 @keyframes moveContIn {
   0% {
     opacity: 0;
     transform: translateX(-10%);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0%);
   }
 }
-
 @keyframes moveContOut {
   0% {
     opacity: 1;
     transform: translateX(0%);
   }
-
   100% {
     opacity: 0;
     transform: translateX(10%);
   }
 }
 
-/*add media query for 960px */
+@media only screen and (max-width: 1170px) {
+  .photosShowCase {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  .leftPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 20px;
+    width: 600px;
+    height: auto;
+    align-self: flex-start;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .rightPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 20px 20px 20px 0px;
+    width: 600px;
+    height: auto;
+    align-self: flex-end;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .middlePhotoCont {
+    display: flex;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .imageFirstCont,
+  .imageSecondCont,
+  .imageAltFirstCont,
+  .imageAltSecondCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageFirstCont,
+  .imageSecondCont {
+    margin-right: 10px;
+  }
+
+  .imageThirdCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageAltFirstCont,
+  .imageAltSecondCont {
+    margin-left: 10px;
+  }
+
+  .imageSeventh {
+    width: 600px;
+    height: auto;
+  }
+  .imageEight {
+    width: 300px;
+    height: auto;
+  }
+  .imageSecondCont,
+  .imageAltSecondCont {
+    padding-top: 30px;
+    display: flex;
+  }
+  .imageFirst,
+  .imageAltFirst {
+    width: 300px;
+    height: auto;
+  }
+  .imagesFirst {
+    display: flex;
+    width: 300px;
+    height: auto;
+  }
+  .imageFirstDesc,
+  .imageAltFirstDesc {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: Futura Pt;
+    font-size: 22px;
+    color: white;
+  }
+
+  .moveCreaPhoto {
+    transform: translateY(5050px);
+  }
+}
 
 @media only screen and (max-width: 790px) {
   html,
@@ -821,21 +837,194 @@ button:focus {
     overflow: hidden;
   }
 
+  /* PHOTO */
+
+  .photosShowCase {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -70px;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  .leftPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 20px;
+    width: 600px;
+    height: auto;
+    align-self: flex-start;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .rightPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 20px 20px 20px 0px;
+    width: 600px;
+    height: auto;
+    align-self: flex-end;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .middlePhotoCont {
+    display: flex;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  .imageFirstCont,
+  .imageSecondCont,
+  .imageAltFirstCont,
+  .imageAltSecondCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageFirstCont,
+  .imageSecondCont {
+    margin-right: -80px;
+  }
+
+  .imageAltFirstCont,
+  .imageAltSecondCont {
+    margin-left: -80px;
+  }
+
+  .imageThirdCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+
+  .imageSeventh {
+    width: 400px;
+    height: auto;
+  }
+  .imageEight {
+    width: 200px;
+    height: auto;
+  }
+  .imageSecondCont,
+  .imageAltSecondCont {
+    padding-top: 30px;
+    display: flex;
+  }
+  .imageFirst,
+  .imageAltFirst {
+    width: 200px;
+    height: auto;
+  }
+  .imagesFirst {
+    display: flex;
+    width: 200px;
+    height: auto;
+  }
+  .imageFirstDesc,
+  .imageAltFirstDesc {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: Futura Pt;
+    font-size: 18px;
+    color: white;
+  }
+
+  .moveCreaPhoto {
+    transform: translateY(3450px);
+  }
+
+  /* */
+
+  .photosShowCase {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  .leftPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    margin: 20px 0 20px 20px;
+    width: 600px;
+    height: auto;
+    align-self: flex-start;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .rightPhotoCont {
+    display: none;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 20px 20px 20px 0px;
+    width: 600px;
+    height: auto;
+    align-self: flex-end;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.45s;
+  }
+  .middlePhotoCont {
+    display: flex;
+    opacity: 1;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+  /* */
+
   .bgImg {
     overflow: hidden;
   }
-
   .titleTxt {
     margin-left: 340px;
   }
-
   .headerTxt {
     font-family: Futurist Fixed-width, sans-serif;
     font-size: 30px;
     font-weight: 100;
     color: white;
   }
-
   .homeTxt {
     font-size: 18px;
   }
@@ -852,6 +1041,217 @@ button:focus {
     cursor: pointer;
     transition: all 0.3s ease;
   }
+  .aboutCont {
+    display: none;
+    width: 800px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 0;
+    position: absolute;
+    top: 28%;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    height: 300px;
+  }
+  .aboutImg {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: 15%;
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
+  .aboutImg img {
+    width: 200px;
+    height: auto;
+  }
+  .aboutTxt {
+    display: flex;
+    width: 225px;
+    height: 250px;
+    align-items: flex-start;
+    z-index: 0;
+    position: relative;
+    top: 20%;
+    text-align: left;
+    transition: all 0.4s ease;
+    margin-left: 48%;
+    margin-bottom: 0%;
+    font-family: Futura PT;
+    font-size: 14px;
+  }
+  .contactCont {
+    display: none;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 250px;
+    pointer-events: none;
+  }
+  .contactTxt {
+    color: rgb(255, 243, 220);
+    width: 50%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 30%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    pointer-events: auto;
+  }
+  .contactTxt p {
+    font-family: Futura PT;
+    font-style: normal;
+    font-size: 17px;
+  }
+  .contactSites {
+    width: 50%;
+    height: 50px;
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20%;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  .gmailCont,
+  .instaCont,
+  .ytCont {
+    margin: 20px;
+    transition: all 0.4s ease;
+  }
+  .gmail,
+  .instagram,
+  .youtube {
+    width: 30px;
+    height: auto;
+    transition: all 0.3s ease;
+  }
+  .gmail:hover,
+  .instagram:hover,
+  .youtube:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #ff1313);
+  }
+  .moveGmail {
+    transform: translateX(-100px);
+  }
+  .gmailInfo {
+    display: none;
+    opacity: 0;
+    font-family: Futura Pt;
+    margin-top: 20%;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: 40px;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+    animation-delay: 0.05s;
+  }
+  .createCont {
+    display: none;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    top: 28%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photoCont,
+  .videoCont {
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
+    height: 200px;
+    z-index: 6;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+  }
+  .overlayPh,
+  .overlayVd {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 200px;
+    height: 200px;
+    animation: hideOverlay;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.35s;
+    animation-delay: 0.1s;
+  }
+  .borderImg,
+  .borderVd {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #920000;
+  }
+  .moveCreaBtn {
+    transform: translateY(175px);
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  video {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .aVideoContIframe {
+    position: relative;
+    top: -120px;
+    transform: scale(0.62);
+  }
+
+  .moveCreaVideo {
+    transform: translateY(3600px);
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -862,7 +1262,6 @@ button:focus {
     margin-left: auto;
     margin-right: auto;
   }
-
   .titleTxt {
     display: flex;
     width: 800px;
@@ -871,46 +1270,389 @@ button:focus {
     height: 10vh;
     position: absolute;
     top: 28%;
-    padding: 0 0 0 0;
     margin-left: 560px;
-    align-items: center;
     transition: all 0.3s ease;
   }
-
   .headerTxt {
     font-family: Futurist Fixed-width, sans-serif;
     font-size: 22px;
     font-weight: 100;
   }
-
   .homeTxt {
     font-family: Futurist Fixed-width, sans-serif;
     font-size: 16px;
   }
-
   button {
     margin: 20px;
     width: 90px;
     height: 50px;
-    padding: 4px;
     cursor: pointer;
     transition: all 0.3s ease;
+  }
+  .aboutCont {
+    display: none;
+    width: 800px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    z-index: 0;
+    position: absolute;
+    top: 28%;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    height: 300px;
+  }
+  .aboutImg {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: 18%;
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
+  .aboutImg img {
+    width: 175px;
+    height: auto;
+  }
+  .aboutTxt {
+    display: flex;
+    width: 200px;
+    height: 250px;
+    align-items: flex-start;
+    z-index: 0;
+    position: relative;
+    top: 20%;
+    text-align: left;
+    transition: all 0.4s ease;
+    margin-left: 48%;
+    margin-bottom: 0%;
+    font-family: Futura PT;
+    font-size: 14px;
+  }
+  .createCont {
+    display: none;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    top: 28%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photoCont,
+  .videoCont {
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 175px;
+    height: 175px;
+    z-index: 6;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+  }
+  .overlayPh,
+  .overlayVd {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 175px;
+    height: 175px;
+    animation: hideOverlay;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.35s;
+    animation-delay: 0.1s;
+  }
+  .borderImg,
+  .borderVd {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #920000;
+  }
+  .moveCreaBtn {
+    transform: translateY(175px);
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .aboutCont {
+    display: none;
+    width: 800px;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 0;
+    position: absolute;
+    top: 14%;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    height: 300px;
+  }
+  .aboutImg {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: 32%;
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
+  .aboutImg img {
+    width: 175px;
+    height: auto;
+  }
+  .aboutTxt {
+    display: flex;
+    width: 210px;
+    height: 250px;
+    align-items: flex-start;
+    z-index: 0;
+    position: relative;
+    top: 90%;
+    text-align: left;
+    transition: all 0.4s ease;
+    margin-left: 38%;
+    margin-bottom: 0%;
+    font-family: Futura PT;
+    font-size: 14px;
+  }
+  .moveAbtBtn {
+    transform: translateY(280px);
+  }
+  .moveAbtTitle {
+    transform: translateY(-150px);
+  }
+  .contactCont {
+    display: none;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 250px;
+    pointer-events: none;
+  }
+  .contactTxt {
+    color: rgb(255, 243, 220);
+    width: 35%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: 30%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    pointer-events: auto;
+  }
+  .contactTxt p {
+    font-family: Futura PT;
+    font-style: normal;
+    font-size: 17px;
+  }
+  .contactSites {
+    width: 50%;
+    height: 50px;
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30%;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    z-index: 1;
+    pointer-events: auto;
+  }
+  .moveGmail {
+    transform: translateY(-20px);
+  }
+  .gmailInfo {
+    display: none;
+    opacity: 0;
+    font-family: Futura Pt;
+    margin-top: 60px;
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-left: -40px;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.4s;
+    animation-delay: 0.05s;
+  }
+
+  @keyframes gmailTxt {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .createCont {
+    display: none;
+    width: 800px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    top: 28%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photoCont,
+  .videoCont {
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    z-index: 6;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+  }
+
+  .videoCont {
+    position: absolute;
+    top: 100px;
+  }
+  .overlayPh,
+  .overlayVd {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 175px;
+    height: 175px;
+    animation: hideOverlay;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.35s;
+    animation-delay: 0.1s;
+  }
+  .borderImg,
+  .borderVd {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 175px;
+    height: 175px;
+    border: 2px solid #920000;
   }
 }
 
 @media only screen and (max-width: 260px) {
   .titleTxt {
-    display: flex;
+    margin-left: 280px;
+  }
+  .aboutCont {
+    display: none;
     width: 800px;
     align-items: flex-start;
-    z-index: 4;
-    height: 10vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 0;
     position: absolute;
-    top: 20%;
-    padding: 0 0 0 0;
-    margin-left: 630px;
+    top: 5%;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    height: 300px;
+  }
+  .aboutImg {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: 32%;
+    margin-right: auto;
+    margin-bottom: 0%;
+  }
+  .aboutImg img {
+    width: 175px;
+    height: auto;
+  }
+  .aboutTxt {
+    display: flex;
+    width: 210px;
+    height: 250px;
+    align-items: flex-start;
+    z-index: 0;
+    position: relative;
+    top: 90%;
+    text-align: left;
+    transition: all 0.4s ease;
+    margin-left: 38%;
+    margin-bottom: 0%;
+    font-family: Futura PT;
+    font-size: 14px;
+  }
+  .moveAbtBtn {
+    transform: translateY(260px);
+  }
+
+  .moveCreaTitle {
+    transform: translateY(-150px);
+    margin-left: 600px;
   }
 
   .headerTxt {
@@ -918,9 +1660,118 @@ button:focus {
     font-size: 18px;
     font-weight: 100;
   }
-
   .homeTxt {
     font-family: Futurist Fixed-width, sans-serif;
     font-size: 14px;
+  }
+  .contactCont {
+    display: none;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    position: absolute;
+    transition: all 0.4s ease;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    height: 250px;
+    pointer-events: none;
+  }
+  .contactTxt {
+    color: rgb(255, 243, 220);
+    width: 28%;
+    display: none;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    top: -20%;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    pointer-events: auto;
+  }
+  .contactSites {
+    width: 50%;
+    height: 50px;
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: -10%;
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+    z-index: 1;
+    pointer-events: auto;
+  }
+
+  .createCont {
+    display: none;
+    width: 800px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    position: absolute;
+    transition: all 0.4s ease;
+    top: 24%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photoCont,
+  .videoCont {
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    z-index: 6;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.55s;
+    animation-delay: 0.1s;
+  }
+
+  .videoCont {
+    position: absolute;
+    top: 100px;
+  }
+  .overlayPh,
+  .overlayVd {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 125px;
+    height: 125px;
+    animation: hideOverlay;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.35s;
+    animation-delay: 0.1s;
+  }
+  .borderImg,
+  .borderVd {
+    display: flex;
+    position: absolute;
+    z-index: 5;
+    width: 125px;
+    height: 125px;
+    border: 2px solid #920000;
   }
 }

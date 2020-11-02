@@ -463,7 +463,7 @@ setTimeout (()=> {
         middlePhotoCont.classList.add("middlePhotoCont")
 
         let imageSeventhCont = document.createElement("div")
-        imageSeventhCont.classList.add("imageSecondCont")
+        imageSeventhCont.classList.add("imageThirdCont")
         let imageSeventhDesc = document.createElement("p")
         imageSeventhDesc.classList.add("imageFirstDesc")
         imageSeventhDesc.textContent = "Tears"
@@ -482,7 +482,7 @@ setTimeout (()=> {
         // 2nd
 
         let imageEighthCont = document.createElement("div")
-        imageEighthCont.classList.add("imageSecondCont")
+        imageEighthCont.classList.add("imageThirdCont")
         let imageEighthDesc = document.createElement("p")
         imageEighthDesc.classList.add("imageFirstDesc")
         imageEighthDesc.textContent = "Never Better"
@@ -500,7 +500,7 @@ setTimeout (()=> {
 
         // 3rd
         let imageNinthCont = document.createElement("div")
-        imageNinthCont.classList.add("imageSecondCont")
+        imageNinthCont.classList.add("imageThirdCont")
         let imageNinthDesc = document.createElement("p")
         imageNinthDesc.classList.add("imageFirstDesc")
         imageNinthDesc.textContent = "Contact"
@@ -520,7 +520,7 @@ setTimeout (()=> {
         //4th
 
         let imageTenthCont = document.createElement("div")
-        imageTenthCont.classList.add("imageSecondCont")
+        imageTenthCont.classList.add("imageThirdCont")
         let imageTenthDesc = document.createElement("p")
         imageTenthDesc.classList.add("imageFirstDesc")
         imageTenthDesc.textContent = "Fake News Infographic"
@@ -537,7 +537,7 @@ setTimeout (()=> {
         // 5th
 
         let imageEleventhCont = document.createElement("div")
-        imageEleventhCont.classList.add("imageSecondCont")
+        imageEleventhCont.classList.add("imageThirdCont")
         let imageEleventhDesc = document.createElement("p")
         imageEleventhDesc.classList.add("imageFirstDesc")
         imageEleventhDesc.textContent = "COVID Prevention Poster"
@@ -923,21 +923,43 @@ function showContactInfo() {
     gmail.classList.add("gmail")
     gmailCont.appendChild(gmail)
 
+    let gmailInfo = document.createElement("p")
+        gmailInfo.classList.add("gmailInfos")
+        gmailInfo.style.display = "none"
+
     gmail.addEventListener("click", ()=> {
-        gmailCont.classList.add("moveGmail")
-        let gmailInfo = document.createElement("p")
-        gmailInfo.style.opacity = "0"
-        gmailInfo.classList.add("gmailInfo")
-        gmailInfo.textContent = "jfrsonstamaria@gmail.com"
-       
-        gmailCont.addEventListener("transitionend", ()=> {
-        gmailInfo.style.display = "flex"
-        gmailInfo.style.animationName = "gmailTxt"
-       })
         
-       gmailCont.appendChild(gmailInfo)
+        console.log(gmailInfo.style.display)
+
+        if (gmailInfo.style.display === "none") {
+            gmailCont.classList.add("moveGmail")
+        
+            
+            gmailInfo.textContent = "jfrsonstamaria@gmail.com"
+           
+            gmailCont.addEventListener("transitionend", ()=> {
+            gmailInfo.style.display = "flex"
+            gmailInfo.style.animationName = "gmailTxt"
+           })
+            
+           gmailCont.appendChild(gmailInfo)
+        } else {
+            gmailCont.classList.remove("moveGmail")
+            
+            gmailInfo.style.opacity = "0"
+            gmailInfo.textContent = ""
+
+            gmailCont.addEventListener("transitionend", ()=> {
+                gmailInfo.style.display = "none"
+                gmailInfo.style.animationName = ""
+                
+               })
+        }
+        
         
     })
+
+    
 
     contactSites.appendChild(gmailCont)
 
@@ -1079,7 +1101,7 @@ function checkCreateCont() {
     let checkCreateConts = createCont.hasChildNodes()
     let photoCont = createCont.childNodes[0]
     let videoCont = createCont.childNodes[1]
-
+    console.log(checkCreateCont)
     
 
     
@@ -1099,7 +1121,8 @@ function checkCreateCont() {
         leftPhotoCont.style.opacity = "1"
         rightPhotoCont.style.opacity = "1"
         middlePhotoCont.style.opacity = "1"
-
+        
+        buttonss.style.transition = "all 2.5s ease"
          
         leftPhotoCont.style.animationName = "leftPhotoContOut"
         rightPhotoCont.style.animationName = "rightPhotoContOut"
@@ -1127,12 +1150,17 @@ function checkCreateCont() {
             
             createCont.style.display = "none";
 
+            buttonss.style.transition = "all 0.4s ease"
+
             
         })
 
       } else if (createCont.childNodes[0].className == "videosShowcase") {
             let videosShowcase = createCont.childNodes[0]
+            console.log(videosShowcase)
             let videoAllCont = videosShowcase.childNodes[0]
+
+            buttonss.style.transition = "all 2.5s ease"
 
             videosShowcase.style.opacity = "1"
             videoAllCont.style.opacity = "1"
@@ -1141,6 +1169,8 @@ function checkCreateCont() {
             homeTxt.addEventListener("animationend", ()=> {
                 videoAllCont.style.display = "none"
                 videoAllCont.remove()
+                videosShowcase.style.display = "none"
+                videosShowcase.remove()
 
                 createCont.style.display = "none";
             })
@@ -1159,8 +1189,11 @@ function checkCreateCont() {
             photoCont.remove();
             videoCont.style.display = "none";
             videoCont.remove();
+
             
             createCont.style.display = "none";
+
+            buttonss.style.transition = "all 0.4s ease"
         })}
 
 
