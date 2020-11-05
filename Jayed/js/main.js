@@ -10,20 +10,18 @@ const aboutCont = document.querySelector(".aboutCont")
 const contactCont = document.querySelector (".contactCont")
 const buttonss = document.querySelector(".buttonss")
 const createCont = document.querySelector(".createCont")
+const modalCont = document.querySelector(".modalCont")
 
 
 allBtns.addEventListener("click", () => {
     const isButton = event.target.nodeName === 'BUTTON' || 'TEXT';
     let checkBtn = event.target
     let actualCheckBtn = checkBtn.innerText
-    console.log(isButton)
-    console.log(checkBtn)
-    console.log(actualCheckBtn)
 
     if (isButton === true || 'TEXT') {
         if (actualCheckBtn == "Home" ) {
             if (homeTxt.innerText === "Home") { 
-                console.log("You're already at Home!") 
+
             }
 
             else if (homeTxt.innerText !== "Home") {
@@ -32,21 +30,21 @@ allBtns.addEventListener("click", () => {
 
         } else if (actualCheckBtn == "Creations") {
             if (homeTxt.innerText === "Creations") { 
-                console.log("You're already at Creations!") 
+
             }  else if (homeTxt.innerText !== "Creations") {
                     showCreate()
                    
             }
         } else if (actualCheckBtn == "About") {
             if (homeTxt.innerText === "About") { 
-                console.log("You're already at About!") 
+
             }  else if (homeTxt.innerText !== "About") {
                 showAbout()
                
             }
         } else if (actualCheckBtn == "Contact") {
             if (homeTxt.innerText === "Contact") { 
-                console.log("You're already at Contact!") 
+
             }  else if (homeTxt.innerText !== "Contact") {
                 showContact()
                 
@@ -102,7 +100,6 @@ function showCreate() {
     allBtns.classList.remove("moveAbtBtn", "moveContBtn")
     titleTxt.classList.add("moveCreaTitle");
     allBtns.classList.add("moveCreaBtn")
-    console.log(allBtns)
     setTimeout(()=> {
         homeTxt.style.opacity = "1"
     }, 100)
@@ -197,7 +194,6 @@ videoCont.addEventListener("mouseout", ()=> {
 setTimeout (()=> {
     photoCont.addEventListener("click", ()=> {
     photoCont.style.pointerEvents = "none"
-    console.log("test1")
    
     checkCreateCont()
 
@@ -533,7 +529,7 @@ setTimeout (()=> {
         imageTenthCont.appendChild(imageTenth)
 
        
-        middlePhotoCont.appendChild(imageTenthCont)
+        rightPhotoCont.appendChild(imageTenthCont)
         // 5th
 
         let imageEleventhCont = document.createElement("div")
@@ -550,7 +546,7 @@ setTimeout (()=> {
         imageEleventhCont.appendChild(imageEleventh)
 
        
-        middlePhotoCont.appendChild(imageEleventhCont)
+        leftPhotoCont.appendChild(imageEleventhCont)
 
         //
 
@@ -580,6 +576,75 @@ setTimeout (()=> {
         middlePhotoCont.addEventListener("animationend", ()=> {
             middlePhotoCont.style.opacity = "1"
         })
+
+        let something = document.getElementsByTagName("IMG")
+       
+        
+
+        for(i = 0; i < something.length; i ++) {
+            something[i].addEventListener("click", ()=> {
+                photoModal(event)
+            })
+        }
+
+        function photoModal(event) {
+            let overlayCont = document.createElement("div")
+            overlayCont.classList.add("overlayCont")
+
+            let imgName = event.target.classList
+            let imgSrc = event.target.src
+            
+            let imgModal = document.createElement("img")
+            imgModal.src = imgSrc
+            
+            let xButton = document.createElement("button")
+            xButton.textContent = "x"
+            overlayCont.appendChild(xButton)
+            
+            if (imgName == "imageFirst" || imgName == "imagesFirst" ||imgName == "imageAltFirst") {
+                imgModal.classList.add("popupImgFirst")
+                overlayCont.appendChild(imgModal)
+
+                xButton.classList.add("xButtonFirst")
+
+                modalCont.appendChild(overlayCont)
+                modalCont.classList.add("active")
+    
+                xButton.addEventListener("click", ()=> {
+                    modalCont.classList.remove("active")
+                    modalCont.addEventListener("transitionend", ()=> {
+                        setTimeout(()=> {
+                            overlayCont.remove()
+                            imgModal.remove()
+                            xButton.remove()}, 400)
+                       
+                    })
+                })
+            } else if (imgName == "imageSeventh") {
+                imgModal.classList.add("popupImgSeventh")
+                overlayCont.appendChild(imgModal)
+
+                xButton.classList.add("xButtonSeventh")
+
+                modalCont.appendChild(overlayCont)
+                modalCont.classList.add("active")
+    
+                xButton.addEventListener("click", ()=> {
+                    modalCont.classList.remove("active")
+                    modalCont.addEventListener("transitionend", ()=> {
+                        setTimeout(()=> {
+                            overlayCont.remove()
+                            imgModal.remove()
+                            xButton.remove()}, 400)
+                       
+                    })
+                })
+            } else {
+               
+            }
+           
+           
+        }
         
 
     }
@@ -587,7 +652,6 @@ setTimeout (()=> {
     setTimeout (()=> {
         videoCont.addEventListener("click", ()=> {
             videoCont.style.pointerEvents = "none"
-        console.log("test1")
        
         checkCreateCont()
     
@@ -849,7 +913,6 @@ function showDpText() {
     aboutActualImg.style.opacity = "0"
     aboutActualImg.src = "../imgs/DP2.png"
     aboutActualImg.classList.add("aboutActualImg")
-    console.log(aboutActualImg)
     aboutImg.appendChild(aboutActualImg)
     aboutCont.appendChild(aboutImg)
 
@@ -929,7 +992,7 @@ function showContactInfo() {
 
     gmail.addEventListener("click", ()=> {
         
-        console.log(gmailInfo.style.display)
+        
 
         if (gmailInfo.style.display === "none") {
             gmailCont.classList.add("moveGmail")
@@ -1016,7 +1079,6 @@ function showContactInfo() {
         contactCont.style.opacity = "1"
     }, 1000)
      
-    console.log(contactCont)
 }
 
 function checkAbtCont() {
@@ -1052,10 +1114,10 @@ function checkAbtCont() {
                 aboutCont.style.display = "none"
             })
         } else {
-            console.log("nothing")
+            
         }
     } else {
-        console.log("no")
+       
     }
     
 }
@@ -1070,8 +1132,7 @@ function checkContactCont() {
      
         let contactTxt = contactCont.childNodes[0]
         let contactSites = contactCont.childNodes[1]
-        console.log(contactTxt)    
-        console.log(contactSites)    
+
         if (contactTxt.style.display == "flex") {
             
             contactTxt.style.animationName = "moveContOut"
@@ -1089,10 +1150,10 @@ function checkContactCont() {
                 contactCont.style.display = "none"
             })
         } else {
-            console.log("nothing")
+            
         }
     } else {
-        console.log("no")
+       
     }
     
 } 
@@ -1101,11 +1162,6 @@ function checkCreateCont() {
     let checkCreateConts = createCont.hasChildNodes()
     let photoCont = createCont.childNodes[0]
     let videoCont = createCont.childNodes[1]
-    console.log(checkCreateCont)
-    
-
-    
-
     
     if (checkCreateConts === true) {
 
@@ -1157,7 +1213,6 @@ function checkCreateCont() {
 
       } else if (createCont.childNodes[0].className == "videosShowcase") {
             let videosShowcase = createCont.childNodes[0]
-            console.log(videosShowcase)
             let videoAllCont = videosShowcase.childNodes[0]
 
             buttonss.style.transition = "all 2.5s ease"
@@ -1199,7 +1254,7 @@ function checkCreateCont() {
 
         
     } else {
-        console.log('nothing')
+        
     }
 
 
