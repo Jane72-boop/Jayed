@@ -617,7 +617,6 @@ setTimeout (()=> {
                             overlayCont.remove()
                             imgModal.remove()
                             xButton.remove()}, 400)
-                       
                     })
                 })
             } else if (imgName == "imageSeventh") {
