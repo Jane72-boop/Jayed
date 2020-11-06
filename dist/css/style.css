@@ -162,6 +162,7 @@ button:focus {
 a:focus {
   outline: none;
 }
+
 .bgImg {
   display: none;
   min-width: 100%;
