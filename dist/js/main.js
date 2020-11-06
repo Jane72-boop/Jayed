@@ -30,7 +30,7 @@ allBtns.addEventListener("click", () => {
 
         } else if (actualCheckBtn == "Creations") {
             if (homeTxt.innerText === "Creations") { 
-
+                checkCreaCreateCont()
             }  else if (homeTxt.innerText !== "Creations") {
                     showCreate()
                    
@@ -1290,6 +1290,230 @@ function checkCreateCont() {
 }
 
 
+function checkCreaCreateCont() {
+    let checkCreateConts = createCont.hasChildNodes()
+    let photoCont = createCont.childNodes[0]
+    let videoCont = createCont.childNodes[1]
+
+    
+    if (checkCreateConts === true) {
+
+      if (createCont.childNodes[0].className == "photosShowCase")
+      {   
+        let photosShowCase =  createCont.childNodes[0]
+        let leftPhotoCont = photosShowCase.childNodes[0]
+        let rightPhotoCont = photosShowCase.childNodes[1]
+        let middlePhotoCont = photosShowCase.childNodes[2]
+
+        photosShowCase.style.opacity = "1"
+
+        leftPhotoCont.style.opacity = "1"
+        rightPhotoCont.style.opacity = "1"
+        middlePhotoCont.style.opacity = "1"
+        
+        buttonss.style.transition = "all 0.4s ease"
+         
+        leftPhotoCont.style.animationName = "leftPhotoContOut"
+        rightPhotoCont.style.animationName = "rightPhotoContOut"
+        middlePhotoCont.style.animationName = "midPhotoContOut"
+          
+
+        leftPhotoCont.addEventListener("animationend", ()=> {
+
+            photosShowCase.style.opacity = "0"
+            leftPhotoCont.style.opacity = "0"
+            rightPhotoCont.style.opacity = "0"
+            middlePhotoCont.style.opacity = "0"
+    
+
+            leftPhotoCont.style.display = "none"
+            leftPhotoCont.remove()
+            rightPhotoCont.style.display = "none"
+            rightPhotoCont.remove()
+            middlePhotoCont.style.display = "none"
+            middlePhotoCont.remove()
+
+            photosShowCase.style.opacity = "0"
+            photosShowCase.style.display = "none"
+            photosShowCase.remove()
+            
+            showCreaCreateCont()
+
+            
+            buttonss.classList.remove("moveCreaPhoto")
+            buttonss.classList.add("moveCreaBtn")
+        })
+
+      } else if (createCont.childNodes[0].className == "videosShowcase") {
+            let videosShowcase = createCont.childNodes[0]
+            console.log(videosShowcase)
+            let videoAllCont = videosShowcase.childNodes[0]
+
+            buttonss.style.transition = "all 0.4s ease"
+
+            videosShowcase.style.opacity = "1"
+            videoAllCont.style.opacity = "1"
+
+            videoAllCont.style.animationName = "hideVids"
+            videoAllCont.addEventListener("animationend", ()=> {
+                videoAllCont.style.display = "none"
+                videoAllCont.remove()
+                videosShowcase.style.display = "none"
+                videosShowcase.remove()
+
+                showCreaCreateCont()
+
+                buttonss.classList.remove("moveCreaVideo")
+                buttonss.classList.add("moveCreaBtn")
+            })
+            
+
+        } else {
+
+        }
+        
+    } else {
+        
+    }
+}
+
+function showCreaCreateCont() {
+    //  Photo
+        let photoCont = document.createElement("div")
+        photoCont.classList.add("photoCont")
+        
+        let borderImg = document.createElement("div")
+        borderImg.classList.add("borderImg")
+        photoCont.appendChild(borderImg)
+    
+        let overlayPh = document.createElement("div")
+        overlayPh.classList.add("overlayPh")
+        let photoContTxt = document.createElement("h2")
+        photoContTxt.innerText = "photos"
+        photoContTxt.classList.add("photoContTxt")
+        overlayPh.appendChild(photoContTxt)
+        photoCont.appendChild(overlayPh)
+    
+        let photoBg = document.createElement("img")
+        photoBg.classList.add("photoBg")
+        photoBg.src = "imgs/photobg.jpg"
+        photoBg.loading = "lazy"
+        photoBg.alt = "Frank Ocean Boys Don't Cry Cover"
+        photoCont.appendChild(photoBg)
+        photoCont.style.display = "flex"
+    
+        createCont.appendChild(photoCont)
+    
+    //  Video
+    
+        let videoCont = document.createElement("div")
+        videoCont.classList.add("videoCont")
+    
+        let borderVd = document.createElement("div")
+        borderVd.classList.add("borderVd")
+        videoCont.appendChild(borderVd)
+    
+        let overlayVd = document.createElement("div")
+        overlayVd.classList.add("overlayVd")
+        let videoContTxt = document.createElement("h2")
+        videoContTxt.innerText = "videos"
+        videoContTxt.classList.add("videoContTxt")
+        overlayVd.appendChild(videoContTxt)
+        videoCont.appendChild(overlayVd)
+    
+        let videoBg = document.createElement("img")
+        videoBg.classList.add("videoBg")
+        videoBg.src = "imgs/videosbg.jpg"
+        videoBg.loading = "lazy"
+        videoBg.alt = "Frank Ocean Boys Don't Cry Cover"
+        videoCont.appendChild(videoBg)
+        videoCont.style.display = "flex"
+
+        createCont.appendChild(videoCont)
+    
+    //
+    
+    setTimeout (()=> {
+        photoCont.addEventListener("mouseover", ()=> {
+        photoCont.style.cursor = "pointer"
+        overlayPh.style.opacity = "0"
+        overlayPh.style.animationName = "showOverlay"
+        overlayPh.style.display = "flex"
+    })
+    
+    
+    photoCont.addEventListener("mouseout", ()=> {
+        overlayPh.style.opacity = "1"
+        overlayPh.style.animationName = "hideOverlay"
+        overlayPh.style.display = "flex"
+        setTimeout(() => {
+            overlayPh.style.display = "none"
+        }, 360);
+    })
+    
+    videoCont.addEventListener("mouseover", ()=> {
+        videoCont.style.cursor = "pointer"
+        overlayVd.style.opacity = "0"
+        overlayVd.style.animationName = "showOverlay"
+        overlayVd.style.display = "flex"
+    })
+    
+    
+    videoCont.addEventListener("mouseout", ()=> {
+        overlayVd.style.opacity = "1"
+        overlayVd.style.animationName = "hideOverlay"
+        overlayVd.style.display = "flex"
+        setTimeout(() => {
+            overlayVd.style.display = "none"
+        }, 360);
+    })
+    
+    setTimeout (()=> {
+        photoCont.addEventListener("click", ()=> {
+        photoCont.style.pointerEvents = "none"
+       
+        checkCreateCont()
+    
+        buttonss.classList.remove("moveCreaBtn")
+        buttonss.style.transition = "all 2.5s ease"
+        buttonss.classList.add("moveCreaPhoto")
+    
+        photoCont.addEventListener("animationend", () => {
+            photoCont.style.display = "none";
+            photoCont.remove();
+            videoCont.style.display = "none";
+            videoCont.remove();
+            createCont.style.display = "flex";
+            createCont.style.width = "1300px"
+            setTimeout(()=>{showcasePhotos()},200)
+            
+        })
+    })}, 200)
+
+    setTimeout (()=> {
+        videoCont.addEventListener("click", ()=> {
+        videoCont.style.pointerEvents = "none"
+       
+        checkCreateCont()
+    
+        buttonss.classList.remove("moveCreaBtn")
+        buttonss.style.transition = "all 2.5s ease"
+        buttonss.classList.add("moveCreaVideo")
+    
+        videoCont.addEventListener("animationend", () => {
+            photoCont.style.display = "none";
+            photoCont.remove();
+            videoCont.style.display = "none";
+            videoCont.remove();
+            createCont.style.display = "flex";
+            createCont.style.width = "1300px"
+            setTimeout(()=>{showcaseVideos()},200)
+            
+        })
+    })}, 1500)
+    
+    }, 500)
+}
 
 
 
