@@ -12,6 +12,10 @@ const buttonss = document.querySelector(".buttonss")
 const createCont = document.querySelector(".createCont")
 const modalCont = document.querySelector(".modalCont")
 
+window.onload = ()=> {
+    document.querySelector("#defHome").focus()
+}
+
 
 allBtns.addEventListener("click", () => {
     const isButton = event.target.nodeName === 'BUTTON' || 'TEXT';

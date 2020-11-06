@@ -158,6 +158,10 @@ button:hover {
 button:focus {
   outline: none;
 }
+
+a:focus {
+  outline: none;
+}
 .bgImg {
   display: none;
   min-width: 100%;
