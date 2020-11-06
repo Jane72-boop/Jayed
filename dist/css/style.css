@@ -63,7 +63,7 @@ iframe {
   transform: translateY(-150px);
 }
 .moveCreaPhoto {
-  transform: translateY(8700px);
+  transform: translateY(6500px);
 }
 .moveCreaVideo {
   transform: translateY(4600px);
@@ -304,6 +304,10 @@ button:focus {
 .imageSeventh {
   width: 500px;
   height: auto;
+}
+
+.imageSeventh:hover {
+  cursor: pointer;
 }
 .imageEight {
   width: 500px;

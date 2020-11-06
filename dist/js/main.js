@@ -125,7 +125,7 @@ function showCreaCont() {
 
     let photoBg = document.createElement("img")
     photoBg.classList.add("photoBg")
-    photoBg.src = "../imgs/photobg.jpg"
+    photoBg.src = "imgs/photobg.jpg"
     photoBg.alt = "Frank Ocean Boys Don't Cry Cover"
     photoCont.appendChild(photoBg)
 
@@ -150,7 +150,7 @@ function showCreaCont() {
 
     let videoBg = document.createElement("img")
     videoBg.classList.add("videoBg")
-    videoBg.src = "../imgs/videosbg.jpg"
+    videoBg.src = "imgs/videosbg.jpg"
     videoBg.alt = "Frank Ocean Boys Don't Cry Cover"
     videoCont.appendChild(videoBg)
 
@@ -234,7 +234,7 @@ setTimeout (()=> {
         
 
         let imageFirst = document.createElement("img")
-        imageFirst.src = "../photoshow/blond1.png"
+        imageFirst.src = "photoshow/blond1.png"
         imageFirst.classList.add("imageFirst")
 
         imageFirstCont.appendChild(imageFirstDesc)
@@ -253,7 +253,7 @@ setTimeout (()=> {
         
 
         let imageSecond = document.createElement("img")
-        imageSecond.src = "../photoshow/blond2.png"
+        imageSecond.src = "photoshow/blond2.png"
         imageSecond.classList.add("imageFirst")
 
         imageSecondCont.appendChild(imageSecondDesc)
@@ -271,7 +271,7 @@ setTimeout (()=> {
         
 
         let imageThird = document.createElement("img")
-        imageThird.src = "../photoshow/blond3.png"
+        imageThird.src = "photoshow/blond3.png"
         imageThird.classList.add("imageFirst")
 
         imageThirdCont.appendChild(imageThirdDesc)
@@ -289,7 +289,7 @@ setTimeout (()=> {
         
 
         let imageFourth = document.createElement("img")
-        imageFourth.src = "../photoshow/blond4.png"
+        imageFourth.src = "photoshow/blond4.png"
         imageFourth.classList.add("imageFirst")
 
         imageFourthCont.appendChild(imageFourthDesc)
@@ -307,7 +307,7 @@ setTimeout (()=> {
         
 
         let imageFifth = document.createElement("img")
-        imageFifth.src = "../photoshow/blond5.png"
+        imageFifth.src = "photoshow/blond5.png"
         imageFifth.classList.add("imageFirst")
 
         imageFifthCont.appendChild(imageFifthDesc)
@@ -324,7 +324,7 @@ setTimeout (()=> {
         
 
         let imageSixth = document.createElement("img")
-        imageSixth.src = "../photoshow/iuiu.png"
+        imageSixth.src = "photoshow/iuiu.png"
         imageSixth.classList.add("imagesFirst")
 
         imageSixthCont.appendChild(imageSixthDesc)
@@ -347,7 +347,7 @@ setTimeout (()=> {
         
 
         let imageAltFirst = document.createElement("img")
-        imageAltFirst.src = "../photoshow/blondalt1.png"
+        imageAltFirst.src = "photoshow/blondalt1.png"
         imageAltFirst.classList.add("imageAltFirst")
 
         imageAltFirstCont.appendChild(imageAltFirstDesc)
@@ -366,7 +366,7 @@ setTimeout (()=> {
         
 
         let imageAltSecond = document.createElement("img")
-        imageAltSecond.src = "../photoshow/blondalt2.png"
+        imageAltSecond.src = "photoshow/blondalt2.png"
         imageAltSecond.classList.add("imageAltFirst")
 
         imageAltSecondCont.appendChild(imageAltSecondDesc)
@@ -385,7 +385,7 @@ setTimeout (()=> {
         
 
         let imageAltThird = document.createElement("img")
-        imageAltThird.src = "../photoshow/blondalt3.png"
+        imageAltThird.src = "photoshow/blondalt3.png"
         imageAltThird.classList.add("imageAltFirst")
 
         imageAltThirdCont.appendChild(imageAltThirdDesc)
@@ -404,7 +404,7 @@ setTimeout (()=> {
         
 
         let imageAltFourth = document.createElement("img")
-        imageAltFourth.src = "../photoshow/blondalt4.png"
+        imageAltFourth.src = "photoshow/blondalt4.png"
         imageAltFourth.classList.add("imageAltFirst")
 
         imageAltFourthCont.appendChild(imageAltFourthDesc)
@@ -423,7 +423,7 @@ setTimeout (()=> {
         
 
         let imageAltFifth = document.createElement("img")
-        imageAltFifth.src = "../photoshow/blondalt5.png"
+        imageAltFifth.src = "photoshow/blondalt5.png"
         imageAltFifth.classList.add("imageAltFirst")
 
         imageAltFifthCont.appendChild(imageAltFifthDesc)
@@ -442,7 +442,7 @@ setTimeout (()=> {
         
 
         let imageAltSixth = document.createElement("img")
-        imageAltSixth.src = "../photoshow/asg.png"
+        imageAltSixth.src = "photoshow/asg.png"
         imageAltSixth.classList.add("imageAltFirst")
 
         imageAltSixthCont.appendChild(imageAltSixthDesc)
@@ -466,7 +466,7 @@ setTimeout (()=> {
         
 
         let imageSeventh = document.createElement("img")
-        imageSeventh.src = "../photoshow/tears.png"
+        imageSeventh.src = "photoshow/tears.png"
         imageSeventh.classList.add("imageSeventh")
 
         imageSeventhCont.appendChild(imageSeventhDesc)
@@ -485,7 +485,7 @@ setTimeout (()=> {
         
 
         let imageEighth = document.createElement("img")
-        imageEighth.src = "../photoshow/neverbetter.png"
+        imageEighth.src = "photoshow/neverbetter.png"
         imageEighth.classList.add("imageSeventh")
 
         imageEighthCont.appendChild(imageEighthDesc)
@@ -503,7 +503,7 @@ setTimeout (()=> {
         
 
         let imageNinth = document.createElement("img")
-        imageNinth.src = "../photoshow/eye.png"
+        imageNinth.src = "photoshow/eye.png"
         imageNinth.classList.add("imageSeventh")
 
         imageNinthCont.appendChild(imageNinthDesc)
@@ -522,7 +522,7 @@ setTimeout (()=> {
         imageTenthDesc.textContent = "Fake News Infographic"
         
         let imageTenth = document.createElement("img")
-        imageTenth.src = "../photoshow/news.png"
+        imageTenth.src = "photoshow/news.png"
         imageTenth.classList.add("imageEight")
 
         imageTenthCont.appendChild(imageTenthDesc)
@@ -539,7 +539,7 @@ setTimeout (()=> {
         imageEleventhDesc.textContent = "COVID Prevention Poster"
         
         let imageEleventh = document.createElement("img")
-        imageEleventh.src = "../photoshow/covprev.png"
+        imageEleventh.src = "photoshow/covprev.png"
         imageEleventh.classList.add("imageEight")
 
         imageEleventhCont.appendChild(imageEleventhDesc)
@@ -691,7 +691,7 @@ setTimeout (()=> {
         theVideo.controls = true
 
         let vidSrc = document.createElement("source")
-        vidSrc.src = "../videoshow/unity.mp4"
+        vidSrc.src = "videoshow/unity.mp4"
         vidSrc.type = "video/mp4"
         theVideo.appendChild(vidSrc)
 
@@ -713,7 +713,7 @@ setTimeout (()=> {
         theVideoiu.controls = true
 
         let vidSrciu = document.createElement("source")
-        vidSrciu.src = "../videoshow/iulast.mp4"
+        vidSrciu.src = "videoshow/iulast.mp4"
         vidSrciu.type = "video/mp4"
         theVideoiu.appendChild(vidSrciu)
 
@@ -737,7 +737,7 @@ setTimeout (()=> {
         theVideoB.controls = true
 
         let vidSrcB = document.createElement("source")
-        vidSrcB.src = "../videoshow/neverbetter.mp4"
+        vidSrcB.src = "videoshow/neverbetter.mp4"
         vidSrcB.type = "video/mp4"
         theVideoB.appendChild(vidSrcB)
 
@@ -760,7 +760,7 @@ setTimeout (()=> {
         theVideoC.controls = true
 
         let vidSrcC = document.createElement("source")
-        vidSrcC.src = "../videoshow/eye.mp4"
+        vidSrcC.src = "videoshow/eye.mp4"
         vidSrcC.type = "video/mp4"
         theVideoC.appendChild(vidSrcC)
 
@@ -783,7 +783,7 @@ setTimeout (()=> {
         theVideoD.controls = true
 
         let vidSrcD = document.createElement("source")
-        vidSrcD.src = "../videoshow/doggowave.mp4"
+        vidSrcD.src = "videoshow/doggowave.mp4"
         vidSrcD.type = "video/mp4"
         theVideoD.appendChild(vidSrcD)
 
@@ -806,7 +806,7 @@ setTimeout (()=> {
         theVideoE.controls = true
 
         let vidSrcE = document.createElement("source")
-        vidSrcE.src = "../videoshow/philnine.mp4"
+        vidSrcE.src = "videoshow/philnine.mp4"
         vidSrcE.type = "video/mp4"
         theVideoE.appendChild(vidSrcE)
 
@@ -910,7 +910,7 @@ function showDpText() {
     aboutImg.classList.add("aboutImg")
     let aboutActualImg = document.createElement("img")
     aboutActualImg.style.opacity = "0"
-    aboutActualImg.src = "../imgs/DP2.png"
+    aboutActualImg.src = "imgs/DP2.png"
     aboutActualImg.classList.add("aboutActualImg")
     aboutImg.appendChild(aboutActualImg)
     aboutCont.appendChild(aboutImg)
@@ -980,7 +980,7 @@ function showContactInfo() {
     gmailCont.classList.add("gmailCont")
     gmailCont.style.display ="flex"
     let gmail = document.createElement("img")
-    gmail.src = "../imgs/gmail.png"
+    gmail.src = "imgs/gmail.png"
     gmail.alt = "gmail"
     gmail.classList.add("gmail")
     gmailCont.appendChild(gmail)
@@ -1029,7 +1029,7 @@ function showContactInfo() {
     instaCont.style.display = "flex"
     instaCont.classList.add("instaCont")
     let insta = document.createElement("img")
-    insta.src = "../imgs/014-instagram.png"
+    insta.src = "imgs/014-instagram.png"
     insta.alt = "instagram"
     insta.classList.add("instagram")
 
@@ -1045,7 +1045,7 @@ function showContactInfo() {
     ytCont.style.display = "flex"
     ytCont.classList.add("ytCont")
     let yt = document.createElement("img")
-    yt.src = "../imgs/018-youtube.png"
+    yt.src = "imgs/018-youtube.png"
     yt.alt = "youtube"
     yt.classList.add("youtube")
 
