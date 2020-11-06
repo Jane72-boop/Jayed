@@ -11,8 +11,12 @@ body {
 }
 body {
   background-color: black;
-  background: url(../imgs/testbg.jpg) fixed center;
+  background: url(../imgs/testbg.jpg) fixed center no-repeat;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 iframe {
   border: none;
