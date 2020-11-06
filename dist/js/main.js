@@ -472,7 +472,7 @@ setTimeout (()=> {
         middlePhotoCont.classList.add("middlePhotoCont")
 
         let imageSeventhCont = document.createElement("div")
-        imageSeventhCont.classList.add("imageThirdCont")
+        imageSeventhCont.classList.add("imageFifthCont")
         let imageSeventhDesc = document.createElement("p")
         imageSeventhDesc.classList.add("imageFirstDesc")
         imageSeventhDesc.textContent = "Tears"
@@ -492,7 +492,7 @@ setTimeout (()=> {
         // 2nd
 
         let imageEighthCont = document.createElement("div")
-        imageEighthCont.classList.add("imageThirdCont")
+        imageEighthCont.classList.add("imageFifthCont")
         let imageEighthDesc = document.createElement("p")
         imageEighthDesc.classList.add("imageFirstDesc")
         imageEighthDesc.textContent = "Never Better"
@@ -511,7 +511,7 @@ setTimeout (()=> {
 
         // 3rd
         let imageNinthCont = document.createElement("div")
-        imageNinthCont.classList.add("imageThirdCont")
+        imageNinthCont.classList.add("imageFifthCont")
         let imageNinthDesc = document.createElement("p")
         imageNinthDesc.classList.add("imageFirstDesc")
         imageNinthDesc.textContent = "Contact"
@@ -532,7 +532,7 @@ setTimeout (()=> {
         //4th
 
         let imageTenthCont = document.createElement("div")
-        imageTenthCont.classList.add("imageThirdCont")
+        imageTenthCont.classList.add("imageFourthCont")
         let imageTenthDesc = document.createElement("p")
         imageTenthDesc.classList.add("imageFirstDesc")
         imageTenthDesc.textContent = "Fake News Infographic"

@@ -310,9 +310,23 @@ a:focus {
   height: auto;
   padding-bottom: 30px;
 }
+
 .imageSeventh {
   width: 500px;
   height: auto;
+}
+
+.imageFifthCont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .imageSeventh:hover {
@@ -333,6 +347,19 @@ a:focus {
   width: 600px;
   height: auto;
   padding-bottom: 30px;
+}
+
+.imageFourthCont {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: auto;
+  padding-bottom: 30px;
+  margin-left: 10px;
 }
 
 .imageSecondCont,
@@ -884,7 +911,7 @@ a:focus {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 500px;
     height: auto;
     justify-self: center;
     align-self: center;
@@ -915,6 +942,32 @@ a:focus {
   }
 
   .imageThirdCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+    margin-right: 10px;
+  }
+
+  .imageFourthCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: 10px;
+  }
+
+  .imageFifthCont {
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -966,7 +1019,7 @@ a:focus {
   }
 
   .moveCreaPhoto {
-    transform: translateY(5050px);
+    transform: translateY(4650px);
   }
 }
 
@@ -1015,14 +1068,16 @@ a:focus {
     animation-timing-function: ease-in-out;
     animation-duration: 0.45s;
   }
+
   .middlePhotoCont {
     display: flex;
+    flex-direction: column;
     opacity: 1;
     flex-wrap: wrap;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 300px;
     height: auto;
     justify-self: center;
     align-self: center;
@@ -1062,7 +1117,33 @@ a:focus {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+    margin-right: -80px;
+  }
+
+  .imageFourthCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    padding-bottom: 30px;
+    margin-left: -80px;
+  }
+
+  .imageFifthCont {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
     height: auto;
     padding-bottom: 30px;
   }
@@ -1102,7 +1183,7 @@ a:focus {
   }
 
   .moveCreaPhoto {
-    transform: translateY(3450px);
+    transform: translateY(3180px);
   }
 
   /* */
@@ -1365,6 +1446,20 @@ a:focus {
     animation-timing-function: ease-in-out;
     animation-duration: 0.35s;
     animation-delay: 0.1s;
+  }
+
+  .photoContTxt,
+  .videoContTxt {
+    font-family: Futura Free;
+    font-size: 30px;
+    letter-spacing: 10px;
+    position: relative;
+    justify-content: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    filter: drop-shadow(0 0 10px #ffffff);
   }
   .borderImg,
   .borderVd {
