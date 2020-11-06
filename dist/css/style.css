@@ -91,7 +91,8 @@ iframe {
   overflow: hidden;
 }
 .homeTxt {
-  font-family: Futurist Fixed-width, sans-serif;
+  font-family: Futurist Fixed-width, Montserrat, sans-serif;
+  src: local("Futurist Fixed-width"), url("FUTRFW.woff") format("woff");
   position: relative;
   left: 5px;
   font-weight: 100;
@@ -128,7 +129,8 @@ iframe {
 .headerTxt {
   display: flex;
   border-right: #9e0606 1px solid;
-  font-family: Futurist Fixed-width, sans-serif;
+  font-family: Futurist Fixed-width, Montserrat, sans-serif;
+  src: local("Futurist Fixed-width"), url("FUTRFW.woff") format("woff");
   font-size: 34px;
   font-weight: 100;
   color: white;
@@ -139,7 +141,7 @@ button {
   margin: 30px;
   width: 150px;
   height: 60px;
-  font-family: Futura PT;
+  font-family: Futura PT, Montserrat, sans-serif;
   letter-spacing: 2px;
   font-weight: 600;
   font-size: 18px;
@@ -391,7 +393,7 @@ a:focus {
   flex-basis: 100%;
   align-items: center;
   justify-content: center;
-  font-family: Futura Pt;
+  font-family: Futura Pt, Montserrat, sans-serif;
   font-size: 25px;
   color: white;
 }
@@ -463,7 +465,7 @@ a:focus {
   position: relative;
   align-items: center;
   justify-content: center;
-  font-family: Futura Pt;
+  font-family: Futura Pt, Montserrat, sans-serif;
   font-size: 25px;
   color: white;
 }
@@ -519,7 +521,7 @@ a:focus {
 }
 .photoContTxt,
 .videoContTxt {
-  font-family: Futura Free;
+  font-family: Futura Free, Montserrat, sans-serif;
   font-size: 50px;
   letter-spacing: 10px;
   position: relative;
@@ -607,7 +609,7 @@ a:focus {
   transition: all 0.4s ease;
   margin-left: 60%;
   margin-bottom: 0%;
-  font-family: Futura PT;
+  font-family: Futura PT, Montserrat, sans-serif;
 }
 .aboutActualTxt {
   color: rgb(255, 246, 228);
@@ -679,7 +681,7 @@ a:focus {
   pointer-events: auto;
 }
 .contactTxt p {
-  font-family: Futura PT;
+  font-family: Futura PT, Montserrat, sans-serif;
   font-style: normal;
   font-size: 17px;
 }
@@ -726,7 +728,7 @@ a:focus {
 .gmailInfos {
   display: none;
   opacity: 0;
-  font-family: Futura Pt;
+  font-family: Futura Pt, Montserrat, sans-serif;
   font-size: 18px;
   color: white;
   position: absolute;
@@ -823,7 +825,7 @@ a:focus {
   align-items: center;
   padding-right: 8px;
   padding-top: 6px;
-  font-family: Futura Pt;
+  font-family: Futura Pt, Montserrat, sans-serif;
   width: 28px;
   height: 28px;
   color: #ffffff;
@@ -858,7 +860,7 @@ a:focus {
   align-items: center;
   padding-right: 8px;
   padding-top: 6px;
-  font-family: Futura Pt;
+  font-family: Futura Pt, Montserrat, sans-serif;
   width: 28px;
   height: 28px;
   color: #ffffff;
@@ -1013,7 +1015,7 @@ a:focus {
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
-    font-family: Futura Pt;
+    font-family: Futura Pt, Montserrat, sans-serif;
     font-size: 22px;
     color: white;
   }
@@ -1177,7 +1179,7 @@ a:focus {
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
-    font-family: Futura Pt;
+    font-family: Futura Pt, Montserrat, sans-serif;
     font-size: 18px;
     color: white;
   }
@@ -1243,7 +1245,7 @@ a:focus {
     margin-left: 340px;
   }
   .headerTxt {
-    font-family: Futurist Fixed-width, sans-serif;
+    font-family: Futurist Fixed-width, Montserrat, sans-serif;
     font-size: 30px;
     font-weight: 100;
     color: white;
@@ -1255,7 +1257,7 @@ a:focus {
     margin: 20px;
     width: 80px;
     height: 40px;
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-weight: 600;
     font-size: 12px;
     color: white;
@@ -1307,7 +1309,7 @@ a:focus {
     transition: all 0.4s ease;
     margin-left: 48%;
     margin-bottom: 0%;
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-size: 14px;
   }
   .contactCont {
@@ -1341,7 +1343,7 @@ a:focus {
     pointer-events: auto;
   }
   .contactTxt p {
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-style: normal;
     font-size: 17px;
   }
@@ -1388,7 +1390,7 @@ a:focus {
   .gmailInfo {
     display: none;
     opacity: 0;
-    font-family: Futura Pt;
+    font-family: Futura Pt, Montserrat, sans-serif;
     margin-top: 20%;
     font-size: 12px;
     color: white;
@@ -1450,7 +1452,7 @@ a:focus {
 
   .photoContTxt,
   .videoContTxt {
-    font-family: Futura Free;
+    font-family: Futura Free, Montserrat, sans-serif;
     font-size: 30px;
     letter-spacing: 10px;
     position: relative;
@@ -1494,9 +1496,9 @@ a:focus {
 
 @media only screen and (max-width: 450px) {
   .buttonss {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1512,12 +1514,12 @@ a:focus {
     transition: all 0.3s ease;
   }
   .headerTxt {
-    font-family: Futurist Fixed-width, sans-serif;
+    font-family: Futurist Fixed-width, Montserrat, sans-serif;
     font-size: 22px;
     font-weight: 100;
   }
   .homeTxt {
-    font-family: Futurist Fixed-width, sans-serif;
+    font-family: Futurist Fixed-width, Montserrat, sans-serif;
     font-size: 16px;
   }
   button {
@@ -1570,7 +1572,7 @@ a:focus {
     transition: all 0.4s ease;
     margin-left: 48%;
     margin-bottom: 0%;
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-size: 14px;
   }
   .createCont {
@@ -1678,7 +1680,7 @@ a:focus {
     transition: all 0.4s ease;
     margin-left: 38%;
     margin-bottom: 0%;
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-size: 14px;
   }
   .moveAbtBtn {
@@ -1718,7 +1720,7 @@ a:focus {
     pointer-events: auto;
   }
   .contactTxt p {
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-style: normal;
     font-size: 17px;
   }
@@ -1746,7 +1748,7 @@ a:focus {
   .gmailInfo {
     display: none;
     opacity: 0;
-    font-family: Futura Pt;
+    font-family: Futura Pt, Montserrat, sans-serif;
     margin-top: 60px;
     font-size: 11px;
     color: white;
@@ -1883,7 +1885,7 @@ a:focus {
     transition: all 0.4s ease;
     margin-left: 38%;
     margin-bottom: 0%;
-    font-family: Futura PT;
+    font-family: Futura PT, Montserrat, sans-serif;
     font-size: 14px;
   }
   .moveAbtBtn {
@@ -1896,12 +1898,12 @@ a:focus {
   }
 
   .headerTxt {
-    font-family: Futurist Fixed-width, sans-serif;
+    font-family: Futurist Fixed-width, Montserrat, sans-serif;
     font-size: 18px;
     font-weight: 100;
   }
   .homeTxt {
-    font-family: Futurist Fixed-width, sans-serif;
+    font-family: Futurist Fixed-width, Montserrat, sans-serif;
     font-size: 14px;
   }
   .contactCont {
