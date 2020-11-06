@@ -13,7 +13,7 @@ const createCont = document.querySelector(".createCont")
 const modalCont = document.querySelector(".modalCont")
 
 window.onload = ()=> {
-    document.querySelector("#defHome").focus()
+    document.getElementById("defHome").focus()
 }
 
 
