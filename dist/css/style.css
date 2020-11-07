@@ -1777,7 +1777,7 @@ a:focus {
     font-size: 14px;
   }
   .moveAbtBtn {
-    transform: translateY(280px);
+    transform: translateY(360px);
   }
   .moveAbtTitle {
     transform: translateY(-150px);
