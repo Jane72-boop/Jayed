@@ -1623,7 +1623,7 @@ a:focus {
     flex-wrap: wrap;
     z-index: 0;
     position: absolute;
-    top: 28%;
+    top: 24%;
     transition: all 0.4s ease;
     margin-left: auto;
     margin-right: auto;
@@ -1662,6 +1662,11 @@ a:focus {
     font-family: Jost, Montserrat, sans-serif;
     font-size: 14px;
   }
+
+  .moveAbtBtn {
+    transform: translateY(280px);
+  }
+
   .createCont {
     display: none;
     width: 800px;
