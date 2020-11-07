@@ -1623,7 +1623,7 @@ a:focus {
     flex-wrap: wrap;
     z-index: 0;
     position: absolute;
-    top: 24%;
+    top: 20%;
     transition: all 0.4s ease;
     margin-left: auto;
     margin-right: auto;
